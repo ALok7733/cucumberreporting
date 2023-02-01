@@ -1,0 +1,54 @@
+step-1:
+Add the dependency file in pom .xml
+
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.7.4</version>
+		</dependency>
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.9</version>
+		</dependency>
+
+step-2:
+Then Add the below command in the CucumberRunner class
+
+plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
+step-3:
+create one properties file under src/test/resources-> extent.properties
+
+then Add the below details in properties file
+
+extent.reporter.spark.start=true
+extent.reporter.spark.out=Reports/Spark.html
+ 
+#PDF Report
+extent.reporter.pdf.start=true
+extent.reporter.pdf.out=PdfReport/ExtentPdf.pdf
+ 
+#HTML Report
+extent.reporter.html.start=true
+extent.reporter.html.out=HtmlReport/ExtentHtml.html
+ 
+#FolderName
+basefolder.name=ExtentReports/SparkReport_
+basefolder.datetimepattern=d_MMM_YY HH_mm_ss
+ 
+#Screenshot
+screenshot.dir=/Screenshots/
+screenshot.rel.path=../Screenshots/
+ 
+#Base64
+extent.reporter.spark.base64imagesrc=true
+ 
+#System Info
+systeminfo.os=windows
+systeminfo.version=10
