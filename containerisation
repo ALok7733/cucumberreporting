@@ -1,0 +1,26 @@
+Virtualization:
+when we need to execute our Automation test cases only on windows it will be easy
+we can write test cases and run on any windows operating system
+when we need to execute the same code on different operating system then problem arises
+For this we can install different operating system on our system using virtualization.
+1>oracle virtual machine
+2>Hypervisor
+
+Difficulties while execution on VM:
+we need to install the set up on All the operating system
+time and money waste
+Memory wastage
+
+Container:
+we don't have multiple os
+here we only have binaries and supporting files
+so Memory wastage is very less
+that's why it is very light weight
+Every container is independent
+Containers do not have their own operating system
+so it is a type of virtual machine where we do not have to worry while set up
+what ever disadvantages to virtual machine, we can achieve  here
+self sustain.
+
+Configurarion:
+Host server->
