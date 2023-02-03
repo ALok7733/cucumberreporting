@@ -6,13 +6,13 @@ step-2:
 we need to go to particular commit which is not merged with master branch
 then select the Download patch option from 3dots
 then copy the cherrypick command
-git fetch ssh://jz0v92@info-gerrit.gm.com:29418/gminfo/InfoAutomationTest refs/changes/15/328415/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://link refs/changes/15/328415/1 && git cherry-pick FETCH_HEAD
 
 step-3:
 go to location where we have our latest clone project
 open the cmd in this location
 paste the checrrypick command
-git fetch ssh://jz0v92@info-gerrit.gm.com:29418/gminfo/InfoAutomationTest refs/changes/15/328415/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://link refs/changes/15/328415/1 && git cherry-pick FETCH_HEAD
 
 Here we will see the previous changes what we already commited in our local branch
 step-4:
